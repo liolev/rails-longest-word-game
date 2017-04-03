@@ -1,0 +1,9 @@
+<h1>Welcome to this super mega funny game !</h1>
+
+<h2> <%= @grid.join(" ") %> </h2>
+
+<form action="/score">
+  <input type="text" placeholder="Guess the longest word" name="attempt">
+  <input type="hidden" name="grid" value="<%= @grid.join("")%>">
+  <input type="submit" value="Go, time's running !">
+</form>
